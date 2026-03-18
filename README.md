@@ -139,6 +139,9 @@ python3 src/server.py
 socks://Og@127.0.0.1:9999#minisocks
 ```
 #### you can copy it and use v2rayN to run it
+
+#### you can check network traffic information in local.log or server.log
+
 <br>
 
 ## If you find this project useful, please consider giving it a ⭐. Thanks!🙏💖
