@@ -250,7 +250,7 @@ class TCP_relay:
                 try:
                     entry_conn,entry_address=local.accept()
                     logging.info(f"new connection:[{entry_address}]")
-                    self.monitor_program_state()
+                    # self.monitor_program_state()
                     threading.Thread(target=self.interaction,args=(entry_conn,)).start()
                 except:
                     continue
