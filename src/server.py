@@ -96,6 +96,7 @@ class TCP_relay:
         assert len(msg)==length,"fuck! is not obey length protocol"
         return msg
     def send(self,input_conn,output_conn,orientation,BUFFER):
+        input_conn.settimeout(20)
         msg=None
         try:
             while True:
@@ -205,7 +206,7 @@ class TCP_relay:
                 try:
                     entry_conn,entry_address=server.accept()
                     logging.info(f"new connection:[{entry_address}]")
-                    self.monitor_program_state()
+                    # self.monitor_program_state()
                     threading.Thread(target=self.interaction,args=(entry_conn,)).start()
                 except:
                     continue
