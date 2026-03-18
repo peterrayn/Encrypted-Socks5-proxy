@@ -55,9 +55,9 @@ cd Encrypted-Socks5-proxy
 
 #### step 2.
 
-`
-change the configuration file (src\configuration.json)
-refer above content "The configuration file parameter"
+`change the configuration file (src\configuration.json)`
+<br>
+`refer above content "The configuration file parameter"
 `
 
 
